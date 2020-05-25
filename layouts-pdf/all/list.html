@@ -1,12 +1,11 @@
 <html>
 <body>
 <article>
-  <h1>Book</h1>
-  {{ .Site.Taxonomies }}
-  {{ $taxonomies := index .Site.Taxonomies .Page.Type }}
-  {{ range $taxonomies }}
-    <div><a href="{{ .Page.Permalink }}">{{ .Page.Title }} <sup>{{ .Count }}</sup></a></div>
-  {{ end }}
+  <h1>{{ .Site.Title }}</h1>
+{{ range (where .Site.Pages "Section" "eq" .Site.Params.BookSection ) }}
+    <h2>{{ .Title }}</h2>
+{{ .Content | markdownify }}
+{{ end }}
 </article>
 
 </body>

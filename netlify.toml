@@ -1,0 +1,15 @@
+[build]
+publish = "/public"
+command = "hugo -d public --environment 'website' && hugo -d public2 --environment 'pdf' && pagedjs-cli public2/all/index.html -o public/book.pdf"
+
+[context.production.environment]
+  HUGO_VERSION = "0.70.0"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.70.0"
+  
+[context.deploy-preview]
+  command = "hugo -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "hugo -b $DEPLOY_PRIME_URL"
