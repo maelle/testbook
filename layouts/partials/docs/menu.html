@@ -2,7 +2,7 @@
 {{ partial "docs/brand" . }}
 {{ partial "docs/search" . }}
 <ul><li>
-<a href = "book.pdf">Get PDF</a>
+<a href = "{{ "book.pdf" | relURL }}">Get PDF</a>
 </li>
 </ul>
 {{ partial "docs/inject/menu-before" . }}
