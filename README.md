@@ -13,6 +13,7 @@ The .md files could be created from .Rmd, therefore making this an alternative t
 Compared to creating a gitbook with `bookdown`, one could customize the html website more easily, and use any Hugo feature.
 
 This proof-of-concept is based on the great [hugo-book theme](https://github.com/alex-shpak/hugo-book). 
+This repo just adds a bit of setup magic (Netlify config, config/ dir) to work with existing great tools.
 
 The idea is to run two Hugo builds with [different configurations](https://gohugo.io/getting-started/configuration/)
 
