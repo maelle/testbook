@@ -37,6 +37,7 @@ If I decide to take this further, that is!
 
 * Actually work on the CSS print sheet.
 * Make Katex, Mermaid etc. work for the PDF version.
+* Make hugo-book features for ordering/including content work.
 * Try and embed a tweet.
 * Try the idea with another book theme?
 * Write some content from Rmd.
