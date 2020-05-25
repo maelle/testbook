@@ -43,4 +43,6 @@ If I decide to take this further, that is!
 * Try the idea with another book theme?
 * Write some content from Rmd.
 
+## Related work
 
+To get a paged.js button in your Hugo website (i.e. not pre-generating the PDF, letting the reader do that from their browser) check out the [Hugo paged-js theme](https://gitlab.pagedmedia.org/julientaq/pagedjs-hugo) that you could use as a [theme component](https://gohugo.io/hugo-modules/theme-components/).
